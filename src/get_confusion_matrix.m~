@@ -1,0 +1,21 @@
+function get_confusion_matrix(test_file, predict_file)
+
+  %
+  num_of_classes = 3;
+  
+  %
+  confusion_matrix = zeros(num_of_classes, num_of_classes);
+  
+  %
+  fid_t = fopen(test_file);
+  fid_p = fopen(predict_file);
+  
+  %
+  line_t = fgets(fid_t);
+  line_p = fgets(fid_p);
+
+  while(ischar(line_t))
+    
+  end
+  
+end
